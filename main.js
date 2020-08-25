@@ -1,7 +1,7 @@
 // Unsplash API
-// const count = 3;
-// const apiKey = "yKOYhVLwH08G6eNBKOK4oWbrwJebAhp-dseexjAjrkA";
-// const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
+const count = 10;
+const apiKey = "yKOYhVLwH08G6eNBKOK4oWbrwJebAhp-dseexjAjrkA";
+const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 
 const imageContainer = document.getElementById("image-container");
 const loader = document.getElementById("loader");
@@ -10,12 +10,6 @@ let ready = false;
 let imagesLoaded = 0;
 let totalImages = 0;
 let photosArray = [];
-
-// Unsplash API
-const count = 5;
-// Normally, don't store API Keys like this, but an exception made here because it is free, and the data is publicly available!
-const apiKey = "jFgS8tteGD425f4oZfygQVaVnD6gt6GucN2yyz3xFek";
-const apiUrl = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}`;
 
 // Check if all images were loaded
 function imageLoaded() {
